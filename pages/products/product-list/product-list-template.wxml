@@ -1,0 +1,22 @@
+<import src="../product/product-template.wxml" />
+<template name="productListTemplate">
+  <view class="product-list-container">
+    <view class="inner-container">
+      <view class="product-head">
+        <text class="slogan">{{categoryTitle}}</text>
+        <view catchtap="onMoreTap" class="more" data-category="{{categoryTitle}}">
+          <text class="more-text">更多</text>
+          <image class="more-img" src="/images/icon/arrow-right.png"></image>
+        </view>
+      </view>
+
+      <view class="products-container">
+        <scroll-view scroll-x style="width: 100%">
+          <block wx:for="{{products}}" wx:for-item="product" wx:key="key">
+            <template is="productTemplate" data="{{...product}}" />
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</template>

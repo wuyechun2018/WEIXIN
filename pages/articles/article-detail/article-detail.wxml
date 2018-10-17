@@ -1,0 +1,24 @@
+<import src="../stars/stars-template.wxml" />
+<view class="container" class="hidden {{visible?'visible':''}}">
+  <image class="head-img" src="{{movie.movieImg}}" mode="aspectFill" />
+  <view class="head-img-hover" data-src="{{movie.movieImg}}" catchtap="viewMoviePostImg">
+    <text class="main-title">{{movie.title}}</text>
+  </view>
+  <image class="movie-img" src="{{movie.movieImg}}" data-src="{{movie.movieImg}}" catchtap="viewMoviePostImg"/>
+  <view class="summary">
+    <view class="original-title">
+      <text>{{movie.originalTitle}}</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsis-font">文章简介</text>
+    <text class="summary-content">{{movie.summary}}</text>
+  </view>
+
+   <view class="synopsis">
+    <text class="synopsis-font">文章详情</text>
+    <text class="summary-content">{{movie.detailContent}}</text>
+  </view>
+ 
+</view>

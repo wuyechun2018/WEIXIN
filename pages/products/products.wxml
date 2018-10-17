@@ -1,0 +1,8 @@
+<!--pages/products/products.wxml-->
+<import src="product-list/product-list-template.wxml" />
+
+<view class="container" wx:if="{{containerShow}}">
+  <view class="products-template">
+    <template is="productListTemplate" data="{{...inTheaters}}" />
+  </view>
+</view>

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/products/products",
+    "pages/articles/articles",
+    "pages/articles/article-detail/article-detail",
+    "pages/movies/movies",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/movies/more-movie/more-movie"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "思淘客",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#eb4f38",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-d.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "豆瓣电影",
+        "iconPath": "images/douban.png",
+        "selectedIconPath": "images/douban-d.png"
+      },
+      {
+        "pagePath": "pages/articles/articles",
+        "text": "产品介绍",
+        "iconPath": "images/product.png",
+        "selectedIconPath": "images/product-d.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "安装服务",
+        "iconPath": "images/tools.png",
+        "selectedIconPath": "images/tools-d.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "我的订单",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order-d.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}

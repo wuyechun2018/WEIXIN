@@ -1,0 +1,22 @@
+<import src="../article/article-template.wxml" />
+<template name="articleListTemplate">
+  <view class="article-list-container">
+    <view class="inner-container">
+      <view class="article-head">
+        <text class="slogan">{{categoryTitle}}</text>
+        <view catchtap="onMoreTap" class="more" data-category="{{categoryTitle}}">
+          <text class="more-text">更多</text>
+          <image class="more-img" src="/images/icon/arrow-right.png"></image>
+        </view>
+      </view>
+
+      <view class="articles-container">
+        <scroll-view scroll-x style="width: 100%">
+          <block wx:for="{{articles}}" wx:for-item="article" wx:key="key">
+            <template is="articleTemplate" data="{{...article}}" />
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</template>
